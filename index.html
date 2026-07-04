@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html
+    b:css='false'
+    b:defaultwidgetversion='2'
+    b:layoutsVersion='3'
+    b:responsive='true'
+    expr:dir='data:blog.languageDirection'
+    expr:lang='data:blog.locale'
+    xmlns='http://www.w3.org/1999/xhtml'
+    xmlns:b='http://www.google.com/2005/gml/b'
+    xmlns:data='http://www.google.com/2005/gml/data'
+    xmlns:expr='http://www.google.com/2005/gml/expr'>
+
+<head>
+
+<meta charset='UTF-8'/>
+
+<meta content='width=device-width,initial-scale=1' name='viewport'/>
+
+<meta expr:content='data:blog.metaDescription' name='description'/>
+
+<meta content='index,follow,max-image-preview:large' name='robots'/>
+
+<title>
+<b:if cond='data:view.isHomepage'>
+Şike Dosyası
+<b:else/>
+<data:view.title/>
+</b:if>
+</title>
+
+<b:include data='blog' name='all-head-content'/>
+
+</head>
+
+<body>
+
+<b:section id='header' maxwidgets='1' showaddelement='yes'/>
+
+<b:section id='hero' maxwidgets='1' showaddelement='yes'/>
+
+<b:section id='featured' maxwidgets='5' showaddelement='yes'/>
+
+<b:section id='timeline' maxwidgets='5' showaddelement='yes'/>
+
+<b:section id='documents' maxwidgets='10' showaddelement='yes'/>
+
+<b:section id='videos' maxwidgets='5' showaddelement='yes'/>
+
+<b:section id='gallery' maxwidgets='5' showaddelement='yes'/>
+
+<b:section id='sidebar' maxwidgets='10' showaddelement='yes'/>
+
+<b:section id='footer' maxwidgets='5' showaddelement='yes'/>
+
+</body>
+
+</html>
