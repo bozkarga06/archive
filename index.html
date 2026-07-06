@@ -57,26 +57,32 @@
      HEADER
 ============================ -->
 
-<header class="site-header">
+<header class="site-header"> <div class="header-search">
+
+    <input
+        type="search"
+        id="searchInput"
+        placeholder="Belge, video veya kişi ara...">
+
+</div>
 
     <div class="container">
 
-        <a href="#"
-           class="logo">
+        <a href="/" class="logo">
 
-            <span class="logo-title">
+<span class="logo-title">
 
-                ŞİKE DOSYASI
+ŞİKE DOSYASI
 
-            </span>
+</span>
 
-            <span class="logo-subtitle">
+<span class="logo-subtitle">
 
-                Gerçekler Unutulmaz
+GERÇEKLER UNUTULMAZ
 
-            </span>
+</span>
 
-        </a>
+</a>
 
         <nav class="desktop-menu">
 
@@ -156,7 +162,7 @@
 
 <main>
 <section class="hero">
-
+<div class="hero-light"></div>
     <div class="hero-content">
 
         <span class="hero-kicker">
@@ -204,7 +210,13 @@
         </div>
 
     </div>
+<div class="scroll-indicator">
 
+SCROLL
+
+<span></span>
+
+</div>
 </section>
 <section class="section">
 
@@ -215,6 +227,30 @@
 <h2 class="section-title">
 
 Son Eklenen Belgeler
+
+<div class="filters">
+
+<button class="filter-btn active" data-filter="all">
+Tümü
+</button>
+
+<button class="filter-btn" data-filter="Belge">
+Belgeler
+</button>
+
+<button class="filter-btn" data-filter="Video">
+Videolar
+</button>
+
+<button class="filter-btn" data-filter="Mahkeme">
+Mahkeme
+</button>
+
+<button class="filter-btn" data-filter="CAS">
+CAS
+</button>
+
+</div>
 
 </h2>
 
@@ -228,125 +264,7 @@ Tümünü Gör →
 
 <div class="cards">
 
-<article class="card">
-
-<div class="card-image">
-
-<img src="assets/images/default-news.jpg" alt="">
-
-<span class="card-category">
-
-Belge
-
-</span>
-
-</div>
-
-<div class="card-body">
-
-<h3 class="card-title">
-
-3 Temmuz Operasyonu
-
-</h3>
-
-<p class="card-text">
-
-Operasyon sabahı yaşanan gelişmelerin kronolojik özeti.
-
-</p>
-
-<div class="card-footer">
-
-<span>03.07.2011</span>
-
-<span>8 dk</span>
-
-</div>
-
-</div>
-
-</article>
-
-<article class="card">
-
-<div class="card-image">
-
-<img src="assets/images/default-news.jpg" alt="">
-
-<span class="card-category">
-
-Video
-
-</span>
-
-</div>
-
-<div class="card-body">
-
-<h3 class="card-title">
-
-Basın Toplantısı
-
-</h3>
-
-<p class="card-text">
-
-Dönemin önemli açıklamalarının tam video arşivi.
-
-</p>
-
-<div class="card-footer">
-
-<span>2011</span>
-
-<span>12 dk</span>
-
-</div>
-
-</div>
-
-</article>
-
-<article class="card">
-
-<div class="card-image">
-
-<img src="assets/images/default-news.jpg" alt="">
-
-<span class="card-category">
-
-Fotoğraf
-
-</span>
-
-</div>
-
-<div class="card-body">
-
-<h3 class="card-title">
-
-Arşiv Galerisi
-
-</h3>
-
-<p class="card-text">
-
-Operasyon sürecine ait yüksek çözünürlüklü fotoğraflar.
-
-</p>
-
-<div class="card-footer">
-
-<span>Galeri</span>
-
-<span>52 Fotoğraf</span>
-
-</div>
-
-</div>
-
-</article>
+<div class="cards" id="latest-posts"></div>
 
 </div>
 </div>
@@ -603,11 +521,79 @@ Soruşturma Süreci
 
 </div>
 
+
+</section>
+
+<div class="lightbox" id="lightbox">
+
+    <button class="lightbox-close">
+        ✕
+    </button>
+
+    <img id="lightbox-image" src="" alt="">
+
+</div>
+
 </div>
 
 </div>
 
 </section>
+
+<section class="gallery section">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <h2 class="section-title">
+                Fotoğraf Arşivi
+            </h2>
+
+        </div>
+
+        <div class="gallery-grid">
+
+            <div class="gallery-item">
+                <img src="assets/images/gallery/1.jpg" alt="">
+            </div>
+
+            <div class="gallery-item">
+                <img src="assets/images/gallery/2.jpg" alt="">
+            </div>
+
+            <div class="gallery-item">
+                <img src="assets/images/gallery/3.jpg" alt="">
+            </div>
+
+            <div class="gallery-item">
+                <img src="assets/images/gallery/4.jpg" alt="">
+            </div>
+
+            <div class="gallery-item">
+                <img src="assets/images/gallery/5.jpg" alt="">
+            </div>
+
+            <div class="gallery-item">
+                <img src="assets/images/gallery/6.jpg" alt="">
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<div class="lightbox" id="lightbox">
+
+    <button class="lightbox-close">
+        ✕
+    </button>
+
+    <img id="lightbox-image" src="" alt="">
+
+</div>
+
 <section class="video-section">
 
 <div class="container">

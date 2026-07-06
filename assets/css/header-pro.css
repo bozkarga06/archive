@@ -1,0 +1,272 @@
+/* ==========================================================
+   HEADER PRO
+========================================================== */
+
+.site-header{
+
+    position:fixed;
+    inset:0 0 auto 0;
+
+    height:82px;
+
+    display:flex;
+    align-items:center;
+
+    z-index:9999;
+
+    transition:.35s;
+
+    background:rgba(8,8,8,.45);
+
+    backdrop-filter:blur(18px);
+
+    -webkit-backdrop-filter:blur(18px);
+
+}
+
+.site-header.scrolled{
+
+    height:72px;
+
+    background:rgba(8,8,8,.94);
+
+    border-bottom:1px solid rgba(255,255,255,.06);
+
+    box-shadow:0 15px 40px rgba(0,0,0,.35);
+
+}
+
+.site-header::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:0;
+
+    width:100%;
+
+    height:1px;
+
+    background:linear-gradient(
+        90deg,
+        transparent,
+        rgba(255,255,255,.08),
+        transparent
+    );
+
+}
+
+.logo{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.logo-title{
+
+    font-size:34px;
+
+    line-height:1;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+}
+
+.logo-subtitle{
+
+    margin-top:4px;
+
+    color:#888;
+
+    font-size:11px;
+
+    letter-spacing:3px;
+
+}
+
+.desktop-menu ul{
+
+    display:flex;
+
+    gap:34px;
+
+}
+
+.desktop-menu a{
+
+    position:relative;
+
+    color:#ddd;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.desktop-menu a:hover{
+
+    color:#fff;
+
+}
+
+.desktop-menu a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-10px;
+
+    width:0;
+
+    height:2px;
+
+    background:var(--color-primary);
+
+    transition:.35s;
+
+}
+
+.desktop-menu a:hover::after{
+
+    width:100%;
+
+}
+
+.header-actions{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+}
+
+.header-actions button{
+
+    width:46px;
+
+    height:46px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#161616;
+
+    transition:.3s;
+
+    cursor:pointer;
+
+}
+
+.header-actions button:hover{
+
+    transform:translateY(-3px);
+
+    background:var(--color-primary);
+
+}
+
+.header-actions img{
+
+    width:18px;
+
+    height:18px;
+
+}
+.scroll-progress{
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+height:3px;
+
+width:0;
+
+background:linear-gradient(
+90deg,
+#ff2d55,
+#ff7b00
+);
+
+z-index:99999;
+
+transition:width .1s;
+
+}
+
+
+/* ==========================================================
+   SEARCH
+========================================================== */
+
+.header-search{
+
+    margin-left:40px;
+
+}
+
+.header-search input{
+
+    width:260px;
+
+    height:44px;
+
+    padding:0 18px;
+
+    border:none;
+
+    border-radius:50px;
+
+    background:#151515;
+
+    color:#fff;
+
+    outline:none;
+
+    transition:.35s;
+
+    border:1px solid transparent;
+
+}
+
+.header-search input:focus{
+
+    border-color:var(--color-primary);
+
+    width:320px;
+
+}
+
+.header-search input::placeholder{
+
+    color:#777;
+
+}
+
+@media(max-width:1100px){
+
+.header-search{
+
+display:none;
+
+}
+
+}

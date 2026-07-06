@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "title": "3 Temmuz Operasyonu",
+    "category": "Belge",
+    "date": "03.07.2011",
+    "readTime": "8 dk",
+    "image": "assets/images/default-news.jpg",
+    "description": "Operasyon sabahı yaşanan gelişmelerin kronolojik özeti."
+  },
+  {
+    "id": 2,
+    "title": "Basın Toplantısı",
+    "category": "Video",
+    "date": "2011",
+    "readTime": "12 dk",
+    "image": "assets/images/default-news.jpg",
+    "description": "Dönemin önemli açıklamalarının tam video arşivi."
+  },
+  {
+    "id": 3,
+    "title": "UEFA Süreci",
+    "category": "Mahkeme",
+    "date": "2012",
+    "readTime": "15 dk",
+    "image": "assets/images/default-news.jpg",
+    "description": "UEFA karar sürecinin resmi belgeleri."
+  },
+  {
+    "id": 4,
+    "title": "CAS Kararı",
+    "category": "CAS",
+    "date": "2013",
+    "readTime": "10 dk",
+    "image": "assets/images/default-news.jpg",
+    "description": "CAS kararlarının kronolojik arşivi."
+  }
+]
