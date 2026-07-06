@@ -1,0 +1,29 @@
+sike-dosyasi-theme/
+│
+├── index.html
+├── README.md
+│
+├── assets/
+│   ├── css/
+│   │   ├── style.css
+│   │   ├── layout.css
+│   │   ├── components.css
+│   │   ├── animations.css
+│   │   └── mobile.css
+│   │
+│   ├── js/
+│   │   ├── app.js
+│   │   ├── menu.js
+│   │   ├── search.js
+│   │   └── timeline.js
+│   │
+│   ├── images/
+│   │   ├── hero/
+│   │   ├── gallery/
+│   │   ├── icons/
+│   │   └── logo/
+│   │
+│   └── fonts/
+│
+└── blogger/
+    └── theme.xml
