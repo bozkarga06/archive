@@ -1,0 +1,145 @@
+/* ==========================================================
+   HERO
+========================================================== */
+
+.hero{
+    position:relative;
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding-top:var(--header-height);
+    overflow:hidden;
+    background:
+    radial-gradient(circle at top right,
+    rgba(200,16,46,.15),
+    transparent 35%),
+    linear-gradient(
+    180deg,
+    #0b0b0b 0%,
+    #090909 50%,
+    #050505 100%);
+}
+
+.hero::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:
+    linear-gradient(
+    to bottom,
+    rgba(0,0,0,.25),
+    rgba(0,0,0,.65)
+    );
+    z-index:1;
+}
+
+.hero-content{
+    position:relative;
+    z-index:5;
+    max-width:1000px;
+    text-align:center;
+    padding:0 20px;
+}
+
+.hero-kicker{
+    display:inline-block;
+    margin-bottom:16px;
+    color:var(--color-gold);
+    font-size:14px;
+    font-weight:600;
+    letter-spacing:3px;
+    text-transform:uppercase;
+}
+
+.hero-title{
+    font-family:var(--font-heading);
+    font-size:clamp(70px,10vw,140px);
+    line-height:.9;
+    letter-spacing:2px;
+    color:#fff;
+    margin-bottom:24px;
+}
+
+.hero-description{
+    max-width:700px;
+    margin:0 auto 40px;
+    color:var(--color-muted);
+    font-size:18px;
+}
+
+.hero-actions{
+    display:flex;
+    justify-content:center;
+    gap:16px;
+    flex-wrap:wrap;
+}
+
+.hero-btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    min-width:220px;
+    height:58px;
+    padding:0 32px;
+    border-radius:12px;
+    font-weight:600;
+    transition:.3s ease;
+}
+
+.hero-btn-primary{
+    background:var(--color-primary);
+    color:#fff;
+}
+
+.hero-btn-primary:hover{
+    transform:translateY(-3px);
+}
+
+.hero-btn-secondary{
+    border:1px solid var(--color-border);
+    background:rgba(255,255,255,.03);
+}
+
+.hero-btn-secondary:hover{
+    border-color:var(--color-primary);
+}
+
+.hero-stats{
+    margin-top:80px;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:24px;
+}
+
+.hero-stat{
+    padding:24px;
+    background:rgba(255,255,255,.03);
+    border:1px solid var(--color-border);
+    border-radius:16px;
+}
+
+.hero-stat-number{
+    display:block;
+    font-family:var(--font-heading);
+    font-size:42px;
+    color:#fff;
+}
+
+.hero-stat-label{
+    color:var(--color-muted);
+    font-size:14px;
+    letter-spacing:1px;
+}
+
+@media(max-width:768px){
+
+    .hero-title{
+        font-size:72px;
+    }
+
+    .hero-stats{
+        grid-template-columns:1fr;
+    }
+
+}
